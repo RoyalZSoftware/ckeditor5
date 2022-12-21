@@ -32,6 +32,7 @@ import HeadingButtonsUI from '@ckeditor/ckeditor5-heading/src/headingbuttonsui';
 import SelectAll from '@ckeditor/ckeditor5-select-all/src/selectall';
 import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 
 
 class Editor extends BalloonEditor {}
@@ -66,7 +67,8 @@ Editor.builtinPlugins = [
 	HeadingButtonsUI,
 	SelectAll,
 	CodeBlock,
-	PageBreak
+	PageBreak,
+	RemoveFormat
 ];
 
 // Editor configuration.
