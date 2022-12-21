@@ -26,6 +26,14 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
+import HeadingButtonsUI from '@ckeditor/ckeditor5-heading/src/headingbuttonsui';
+import SelectAll from '@ckeditor/ckeditor5-select-all/src/selectall';
+import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
+import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak';
+import Gallery from 'outleap-ckeditor5-gallery/src/gallery';
+
 
 class Editor extends BalloonEditor {}
 
@@ -53,7 +61,14 @@ Editor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	SimpleUploadAdapter,
+	ImageResize,
+	HeadingButtonsUI,
+	SelectAll,
+	CodeBlock,
+	PageBreak,
+	Gallery
 ];
 
 // Editor configuration.
